@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Leaflet fix for clean layering */
+.leaflet-container {
+  font-family: inherit;
+  z-index: 10 !important;
+  border-radius: 0.75rem;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 20 !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
